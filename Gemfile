@@ -32,7 +32,7 @@ group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'launchy'
-  gem 'simplecov'
+  gem 'simplecov', '~> 0.7.1'
   gem 'timecop'
 end
 
