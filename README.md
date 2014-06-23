@@ -13,6 +13,7 @@ Setup
 =================
 bundle install
 rake db:create
+rake db:seed
 
 
 Tests
