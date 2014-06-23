@@ -13,3 +13,10 @@ Setup
 =================
 bundle install
 rake db:create
+
+
+Tests
+================
+
+To run tests:
+bin/rspec
