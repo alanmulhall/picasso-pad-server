@@ -4,7 +4,7 @@ gem 'rails', '4.1.1'
 gem 'pg'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
-gem 'coveralls', require: false
+#gem 'coveralls', require: false
 
 
 group :assets do
@@ -29,7 +29,6 @@ group :development, :test do
   gem 'pry-nav'
   gem 'faker'
   gem 'rspec-rails'
-  gem 'capybara'
   gem 'database_cleaner'
   gem 'launchy'
   gem 'simplecov', '~> 0.7.1'
