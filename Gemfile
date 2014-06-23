@@ -4,7 +4,7 @@ gem 'rails', '4.1.1'
 gem 'pg'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
-#gem 'coveralls', require: false
+gem 'coveralls', require: false
 
 
 group :assets do
@@ -15,8 +15,11 @@ end
 group :development do
   gem 'spring'
   gem 'rubocop', require: false
+end
+
+group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', '~> 0.4.0', group: :doc
+  gem 'sdoc', '~> 0.4.0'
 end
 
 group :test do
