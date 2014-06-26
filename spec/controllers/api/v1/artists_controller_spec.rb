@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe ArtistsController, type: :controller do
+RSpec.describe Api::V1::ArtistsController, type: :controller do
 
   let(:artists) { FactoryGirl.create :artist }
 
