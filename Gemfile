@@ -45,6 +45,10 @@ end
 gem 'unicorn'
 gem 'foreman'
 
+# Faster JSON
+gem 'oj'
+gem 'oj_mimic_json'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
