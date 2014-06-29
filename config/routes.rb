@@ -6,6 +6,6 @@ Rails.application.routes.draw do
     end
   end
 
-  root to: 'artists#index'
+  root to: 'api/v1/artists#index'
 
 end

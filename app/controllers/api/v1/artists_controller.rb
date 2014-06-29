@@ -1,5 +1,5 @@
 module Api::V1
-  class ArtistsController < ApplicationController
+  class ArtistsController < Api::ApiController
 
     def index
       @artists = Artist.all
