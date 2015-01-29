@@ -2,12 +2,18 @@ require 'rails_helper'
 
 RSpec.describe Api::V1::ArtistsController, type: :controller do
 
-  let(:artists) { FactoryGirl.create :artist }
-
-  describe '#index' do
-    it 'assigns @artists' do
+  describe 'GET /v1/artists' do
+    it 'returns all artists' do
+      artists = create :artist
       get :index, format: :json
-      expect(assigns(:artists)).to eq [artists]
+
+      expected_response = [{
+        'firstName' => artists.first_name,
+        'lastName' => artists.last_name,
+        'fullName' => "#{artists.first_name} #{artists.last_name}"
+      }]
+
+      expect(expected_response).to eq(JSON.parse(response.body))
     end
   end
 
