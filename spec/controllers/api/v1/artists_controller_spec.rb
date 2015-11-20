@@ -14,6 +14,7 @@ RSpec.describe Api::V1::ArtistsController, type: :controller do
             'email' => artists.email,
             'first_name' => artists.first_name,
             'last_name' => artists.last_name,
+            'full_name' => "#{artists.first_name} #{artists.last_name}",
             'created_at' => "#{artists.created_at.as_json}",
             'updated_at' => "#{artists.updated_at.as_json}"
           }
