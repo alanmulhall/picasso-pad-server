@@ -3,6 +3,7 @@ module Api::V1
 
     def index
       @artists = Artist.all
+      render json: @artists
     end
 
   end
