@@ -3,11 +3,12 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
 gem 'pg'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+#gem 'jbuilder', '~> 2.0'
 gem 'coveralls', require: false
 # Use unicorn as the app server
 gem 'unicorn'
 gem 'foreman'
+gem 'rails-api'
 
 # Faster JSON
 gem 'oj'
