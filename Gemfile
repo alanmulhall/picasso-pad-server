@@ -16,6 +16,7 @@ gem 'oj_mimic_json'
 group :development do
   gem 'spring'
   gem 'rubocop', require: false
+  gem 'brakeman', :require => false
 end
 
 group :doc do
