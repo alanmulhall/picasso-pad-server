@@ -19,6 +19,7 @@ gem 'active_model_serializers', github: 'rails-api/active_model_serializers'
 group :development do
   gem 'spring'
   gem 'rubocop', require: false
+  gem "rails_best_practices"
   gem 'brakeman', :require => false
   gem 'web-console', '~> 2.0'
 end
